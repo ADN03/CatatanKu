@@ -66,6 +66,11 @@ public class DBHandler extends SQLiteOpenHelper {
         db.delete(TABLE_NAME, ROW_ID + "=" + id, null);
     }
 
+    //HAPUS SEMUA DATA
+    public void hapusSemuaData() {
+        db.execSQL("DELETE FROM " + TABLE_NAME);
+    }
+
 }
 
 

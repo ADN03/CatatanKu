@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Notes"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
     <ListView
         android:id="@+id/listNotes"
@@ -35,7 +35,7 @@
         app:fabSize="normal"
         app:layout_anchor="@id/bottom"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentEnd="true"/>
 
 
 </android.support.design.widget.CoordinatorLayout>

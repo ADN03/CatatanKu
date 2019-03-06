@@ -7,6 +7,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -118,6 +122,36 @@ public class Notes extends AppCompatActivity implements AdapterView.OnItemClickL
         AlertDialog dialog = builderl.create();
         dialog.show();
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_delete, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(Notes.this);
+        builder.setTitle("Hapus Catatan ?");
+        builder.setMessage("Apakah anda yakin ingin menghapus semua catatan ?");
+        builder.setPositiveButton("HAPUS", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                handler.hapusSemuaData();
+                setUpListView();
+            }
+        });
+        builder.setNegativeButton("BATAL", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //CANCEL
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        return true;
     }
 
     @Override

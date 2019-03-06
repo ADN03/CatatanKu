@@ -8,4 +8,5 @@
     <string name="simpan_data">Simpan Data</string>
     <string name="edit_catatan">Edit Catatan</string>
     <string name="buat_catatan">Buat Catatan</string>
+    <string name="delete_all">Delete All</string>
 </resources>
