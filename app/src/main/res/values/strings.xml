@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CatatanKu</string>
+    <string name="judul">Judul</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="keep_data">Keep Data</string>
+    <string name="tambah_data">tambah data</string>
+    <string name="simpan_data">Simpan Data</string>
+</resources>
