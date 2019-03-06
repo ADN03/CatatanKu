@@ -6,4 +6,6 @@
     <string name="keep_data">Keep Data</string>
     <string name="tambah_data">tambah data</string>
     <string name="simpan_data">Simpan Data</string>
+    <string name="edit_catatan">Edit Catatan</string>
+    <string name="buat_catatan">Buat Catatan</string>
 </resources>
