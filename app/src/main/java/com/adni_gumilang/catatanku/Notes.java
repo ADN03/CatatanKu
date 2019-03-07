@@ -136,7 +136,7 @@ public class Notes extends AppCompatActivity implements AdapterView.OnItemClickL
         AlertDialog.Builder builder = new AlertDialog.Builder(Notes.this);
         builder.setTitle("Hapus Catatan ?");
         builder.setMessage("Apakah anda yakin ingin menghapus semua catatan ?");
-        builder.setPositiveButton("HAPUS", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("YA", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 handler.hapusSemuaData();
