@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Notes extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -138,6 +139,7 @@ public class Notes extends AppCompatActivity implements AdapterView.OnItemClickL
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 handler.hapusSemuaData();
+                Toast.makeText(Notes.this, "Semua Catatan berhasil dihapus", Toast.LENGTH_LONG).show();
                 setUpListView();
             }
         });
